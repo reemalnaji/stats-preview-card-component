@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Signika&display=swap');
+
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*.attribution {
+  font-size: 11px; text-align: center; 
+}
+
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+ }*/
+
+ .container{
+    background-color: hsl(233, 47%, 7%);
+    max-width: 1440px;
+    height: 720px;
+    margin: 40px auto;
+    display:flex;
+    justify-content: center;
+}
+
+
+.main{
+    display:flex;
+    width: 70%;
+    height:60% ;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+
+.info{
+   width: 50%;
+   background-color: hsl(244, 38%, 16%);
+   padding: 40px;
+   border-radius: 10px 0 0 10px;
+  
+}
+
+.info h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    padding-right: 30px;
+    padding-left: 30px;
+   
+}
+.info h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.info p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family:'Lexend Deca', sans-serif;
+    padding: 10px 30px 40px 30px;
+    line-height: 2;
+}
+
+
+ .stats{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 75px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.number{
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+}
+
+.text{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 12px;
+  letter-spacing: 2px;;
+}
+
+
+.my-image{
+  position:relative; 
+  background-image: url('images/image-header-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  border-radius: 0 10px 10px 0;
+ 
+}
+/*the color on top of the image*/
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 60%;
+  border-radius: 0 10px 10px 0;
+}
+
+
+
+
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 100%; 
+    margin: 20px auto; 
+    text-align: center;
+    min-height: 1350px;
+   
+  }
+
+  .main {
+    flex-direction: column-reverse; 
+    width: 80%;
+    margin-top: 100px;
+    margin-right: 10px;
+    height: fit-content;
+  }
+
+  .info {
+    width: 64%; 
+    border-radius: 0; 
+  }
+
+  .my-image {
+    width: 90%;  
+    min-height: 400px;
+    border-radius: 10px 10px 0 0; 
+  }
+
+  .overlay{
+    border-radius: 10px 10px 0 0; 
+  }
+
+  
+  .info h1 {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .info p {
+    font-size: 14px;
+    padding: 10px 20px 20px;
+  }
+
+  .stats {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .number {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+}
+
+
